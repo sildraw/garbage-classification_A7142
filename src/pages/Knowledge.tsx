@@ -369,8 +369,11 @@ export default function Knowledge() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {knowledgeData.confusingItems.map((item, index) => {
-              const correctMeta =
-                categoryMeta[item.correctCategory as CategoryId];
+              const correctMeta = categoryMeta[item.correctCategory];
+              const wrongName =
+                knowledgeData.categories.find((c) => c.id === item.wrongCategory)?.name || "";
+              const correctName =
+                knowledgeData.categories.find((c) => c.id === item.correctCategory)?.name || "";
               return (
                 <motion.div
                   key={item.id}
@@ -394,7 +397,7 @@ export default function Knowledge() {
                         </span>
                       </div>
                       <p className="text-sm text-charcoal font-medium">
-                        {item.wrongCategory}
+                        {wrongName}
                       </p>
                     </div>
                     <div
@@ -420,7 +423,7 @@ export default function Knowledge() {
                         className="text-sm font-medium"
                         style={{ color: correctMeta.color }}
                       >
-                        {item.correctCategory}
+                        {correctName}
                       </p>
                     </div>
                   </div>

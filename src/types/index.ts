@@ -17,8 +17,8 @@ export interface Category {
 export interface ConfusingItem {
   id: string;
   name: string;
-  wrongCategory: string;
-  correctCategory: string;
+  wrongCategory: CategoryId;
+  correctCategory: CategoryId;
   reason: string;
 }
 
