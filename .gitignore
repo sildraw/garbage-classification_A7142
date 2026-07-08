@@ -28,3 +28,10 @@ dist-ssr
 
 # OS
 Thumbs.db
+
+# 原始实践材料（不上传到 GitHub）
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.zip
