@@ -1,0 +1,90 @@
+import type { TeamData } from "@/types";
+
+export const teamData: TeamData = {
+  teamName: "环保A7142小分队",
+  theme: "推动绿色发展，助力环境保护",
+  members: [
+    {
+      id: "1",
+      name: "黄文龙",
+      role: "队长",
+      gender: "男",
+      college: "计算机科学与技术/人工智能学院",
+      className: "计算机类2025-5班",
+      phone: "188****5537",
+      responsibility: "统筹项目实施、网站开发、调研报告撰写",
+    },
+    {
+      id: "2",
+      name: "王曜",
+      role: "副队长",
+      gender: "男",
+      college: "计算机科学与技术/人工智能学院",
+      className: "计算机类2025-5班",
+      phone: "178****5080",
+      responsibility: "问卷设计、数据统计、新闻稿撰写",
+    },
+    {
+      id: "3",
+      name: "路子俊",
+      role: "组员",
+      gender: "男",
+      college: "计算机科学与技术/人工智能学院",
+      className: "计算机类2025-5班",
+      phone: "180****1963",
+      responsibility: "资料搜集、海报制作、视频拍摄",
+    },
+    {
+      id: "4",
+      name: "郭晋瑞",
+      role: "组员",
+      gender: "男",
+      college: "计算机科学与技术/人工智能学院",
+      className: "计算机类2025-5班",
+      phone: "178****2571",
+      responsibility: "视频剪辑、问卷调查、成果整理",
+    },
+  ],
+  schedule: [
+    {
+      date: "7.15 - 7.16",
+      location: "学校图书馆、自习室",
+      content: "查阅垃圾分类政策与现状资料；学习四分类标准及易混物品处理；设计线上+线下调查问卷初稿并讨论定稿。",
+      members: "全体成员",
+    },
+    {
+      date: "7.17 - 7.18",
+      location: "学校周边社区、校内垃圾分类投放点",
+      content: "开展问卷调查，前往2处垃圾分类点进行实地观察与统计。",
+      members: "全体成员",
+    },
+    {
+      date: "7.19 - 7.20",
+      location: "宿舍",
+      content: "制作垃圾分类知识海报（电子版+纸质版）；拍摄宣传视频素材：社区分类点实景、居民投放过程、成员讲解分类知识。",
+      members: "全体成员",
+    },
+    {
+      date: "7.21 - 7.22",
+      location: "宿舍",
+      content: "设计并搭建垃圾分类科普网站；完成宣传视频后期制作（剪辑、配音、字幕、背景音乐），时长3-5分钟。",
+      members: "全体成员",
+    },
+    {
+      date: "7.23 - 7.24",
+      location: "宿舍",
+      content: "整理问卷数据与实地统计结果，撰写不少于1500字的调研报告；撰写新闻稿。",
+      members: "全体成员",
+    },
+  ],
+  advisor: {
+    name: "史毛宁",
+    phone: "131****9227",
+    unit: "中国矿业大学",
+    title: "专职辅导员、助教",
+  },
+  contact: {
+    email: "a7142team@cumt.edu.cn",
+    leaderPhone: "188****5537",
+  },
+};
