@@ -29,7 +29,10 @@ dist-ssr
 # OS
 Thumbs.db
 
-# 原始实践材料（不上传到 GitHub）
+# Trae IDE
+.trae/
+
+# Original practice materials
 *.doc
 *.docx
 *.xls

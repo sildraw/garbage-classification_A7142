@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       colors: {
-        // 主色调 - 自然生态
+        // ????? - ??????
         forest: {
           DEFAULT: "#2D5F3F",
           50: "#F0F5F1",
@@ -39,7 +39,7 @@ export default {
         },
         cream: "#F8F6F0",
         charcoal: "#1A2E1A",
-        // 四分类专属色
+        // ?????????
         recyclable: "#1E88E5",
         hazardous: "#E53935",
         kitchen: "#43A047",
