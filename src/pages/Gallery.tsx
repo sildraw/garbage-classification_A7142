@@ -100,7 +100,7 @@ export default function Gallery() {
               className="w-full h-full object-cover"
               controls
             >
-              <source src="/videos/promo-video.mp4" type="video/mp4" />
+              <source src="https://cdn.jsdelivr.net/gh/sildraw/garbage-classification_A7142@main/public/videos/promo-video.mp4" type="video/mp4" />
               您的浏览器不支持视频播放，请升级浏览器或更换设备查看。
             </video>
           </motion.div>
