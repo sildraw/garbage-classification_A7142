@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Newspaper, ExternalLink, Image, Video } from "lucide-react";
+import { X, Newspaper, ExternalLink, Image } from "lucide-react";
 import SectionTitle from "@/components/common/SectionTitle";
 
 // 海报数据（使用 SVG 占位，实际可替换为真实海报图片）
@@ -86,7 +86,6 @@ export default function Gallery() {
           <SectionTitle
             eyebrow="PROMO VIDEO"
             title="宣传科普视频"
-            subtitle="垃圾分类科普短片，涵盖分类知识与实地采访"
             align="left"
           />
 
@@ -105,11 +104,6 @@ export default function Gallery() {
               您的浏览器不支持视频播放，请升级浏览器或更换设备查看。
             </video>
           </motion.div>
-
-          <div className="flex items-center justify-center gap-2 mt-4 text-sm text-forest-500">
-            <Video className="w-4 h-4" />
-            <span>环保A7142小分队出品 · 2026.07</span>
-          </div>
         </div>
       </section>
 
