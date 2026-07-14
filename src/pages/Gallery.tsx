@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Play, X, Newspaper, ExternalLink, Image, Video } from "lucide-react";
+import { X, Newspaper, ExternalLink, Image, Video } from "lucide-react";
 import SectionTitle from "@/components/common/SectionTitle";
 
 // 海报数据（使用 SVG 占位，实际可替换为真实海报图片）
@@ -86,7 +86,7 @@ export default function Gallery() {
           <SectionTitle
             eyebrow="PROMO VIDEO"
             title="宣传科普视频"
-            subtitle="3-5分钟垃圾分类科普短片，涵盖分类知识与实地采访"
+            subtitle="垃圾分类科普短片，涵盖分类知识与实地采访"
             align="left"
           />
 
@@ -95,37 +95,21 @@ export default function Gallery() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative bg-gradient-to-br from-forest-800 to-forest-900 rounded-3xl overflow-hidden aspect-video shadow-card group cursor-pointer"
+            className="relative bg-gradient-to-br from-forest-800 to-forest-900 rounded-3xl overflow-hidden aspect-video shadow-card"
           >
-            {/* 视频封面占位 */}
-            <div className="absolute inset-0 bg-leaf-texture opacity-20" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-cream">
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-cream/15 backdrop-blur rounded-full mb-4 group-hover:bg-sprout/30 transition-colors"
-              >
-                <Play className="w-10 h-10 md:w-12 md:h-12 text-cream ml-1" fill="currentColor" />
-              </motion.div>
-              <h3 className="font-serif text-2xl md:text-3xl font-bold mb-2">
-                垃圾分类，从我做起
-              </h3>
-              <p className="text-cream/70 text-sm md:text-base">
-                时长 3-5 分钟 · 含社区实景与成员讲解
-              </p>
-            </div>
-
-            {/* 视频信息条 */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-charcoal/60 to-transparent">
-              <div className="flex items-center gap-2 text-xs text-cream/80">
-                <Video className="w-4 h-4" />
-                <span>环保A7142小分队出品 · 2026.07</span>
-              </div>
-            </div>
+            <video
+              className="w-full h-full object-cover"
+              controls
+            >
+              <source src="/videos/promo-video.mp4" type="video/mp4" />
+              您的浏览器不支持视频播放，请升级浏览器或更换设备查看。
+            </video>
           </motion.div>
 
-          <p className="text-center text-sm text-forest-400 mt-4">
-            视频将在实践完成后（8月1日后）上传
-          </p>
+          <div className="flex items-center justify-center gap-2 mt-4 text-sm text-forest-500">
+            <Video className="w-4 h-4" />
+            <span>环保A7142小分队出品 · 2026.07</span>
+          </div>
         </div>
       </section>
 
