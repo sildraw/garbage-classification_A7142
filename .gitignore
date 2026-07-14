@@ -38,3 +38,6 @@ Thumbs.db
 *.xls
 *.xlsx
 *.zip
+
+# Root-level videos (only /public/videos is tracked)
+/*.mp4
